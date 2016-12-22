@@ -1,0 +1,25 @@
+
+<%= form_for @admin do |f| %>
+  
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :salary %>
+    <%= f.text_field :salary, class: 'form-control'%>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :nunber_of_days %>
+    <%= f.text_field :number_of_days, class: 'form-control'%>
+  </div>
+  <div class="form-group">
+    <%= f.label :leave %>
+    <%= f.text_field :leave, class: 'form-control'%>
+  </div>
+
+  <%= f.submit 'submit', class: 'btn btn-primary' %>
+<% end %>

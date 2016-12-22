@@ -1,0 +1,31 @@
+ <p id="notice"><%= notice %></p>
+<h1 style="text-align:center; color:green;"> Generate Files</h1>
+
+ <table style="border:2px solid;"" align="center" >
+    <thead style="border:2px solid;">
+      <tr style="border:2px solid;">
+     
+        <th style="border:2px solid;">Name</th>
+        <th style="border:2px solid;">Salary</th>
+        <th style="border:2px solid;"> Number of days</th>
+        <th style="border:2px solid;">Leaves</th>
+        <th style="border:2px solid;">Total salary</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody class="alert alert-danger">
+      <% @admins.each do |admin| %>
+        <tr>
+         
+          <td style="border:2px solid;"><%= admin.name %></td>
+          <td style="border:2px solid;"><%= admin.salary%></td>
+           <td style="border:2px solid;"><%= admin.number_of_days%></td>
+          <td style="border:2px solid;"><%= admin.leave%></td>
+          <td style="border:2px solid;"><%=  total_salary(admin) %></td>
+          
+        </tr>
+      <% end %>
+
+    </tbody>
+  </table>

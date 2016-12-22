@@ -1,0 +1,326 @@
+
+<body style="background: #1a1a1a;">
+
+    <div id="switcher">
+        <div class="center">
+            <div class="logo">
+                <a href="index.html.erb" target="_blank" title="Premium Design &amp; Web Resources">
+                <%= render "devise/shared/mymodel" %>
+              
+            </div>
+                            
+                
+
+  
+        </div>
+        </div>
+    </div>
+    <div style="display: none;" id="loading">
+        <div class="loader loader-light loader-large"></div>
+    </div>
+    
+
+
+    
+    <div class="wrapper">
+
+        <aside class="sidebar">
+            
+            <div class="user-info">
+                    <figure class="rounded-image profile__img">
+                         <%= link_to root_path do %>
+               <%= image_tag "profile.jpg", :width => 100, :class => 'img-circle img-responsive' %>
+              <% end %>
+                    </figure>
+                    <h2 class="user-info__name">Gayatri Chhibber</h2>
+                    <h3 class="user-info__role">Admin Manager</h3>
+                    
+                </div> <!-- /user-info -->
+
+                <ul class="main-nav">
+                    <li class="main-nav--active">
+                        <a class="main-nav__link" href="index.html">
+                            <span class="main-nav__icon"><i class="pe-7f-home"></i></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-edit"></i></span>
+                            Earning<span class="badge badge--line badge--blue">3</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Binary Income</span></a></li>
+                            <li><a href="#"><span>Direct Income</span></a></li>
+                            <li><a href="#"><span>Ad Income</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-monitor"></i></span>
+                            Top Up <span class="badge badge--line badge--blue">2</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Top Up Account</span></a></li>
+                            <li><a href="#"><span>Top Up Detail</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        
+                            <span class="main-nav__icon">
+                            <%= link_to 'Tree' , authenticate_tree_path , :class => 'main-nav__link'%><i class="pe-7f-browser"></i></span>
+                        
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-note"></i></span>
+                            Team Detail<span class="badge badge--line badge--blue">3</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Left Team</span></a></li>
+                            <li><a href="#"><span>Right Team</span></a></li>
+                            <li><a href="#"><span>My Direct</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="main-nav__link" href="#">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Bootstrap Grid
+                        </a>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-note"></i></span>
+                            Wallet<span class="badge badge--line badge--blue">4</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>E Wallet</span></a></li>
+                            <li><a href="#"><span>AD Wallet</span></a></li>
+                            <li><a href="#"><span>Purchase Wallet</span></a></li>
+                            <li><a href="#"><span>Fund Transfer</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="main-nav__link" href="#">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Invoice
+                        </a>
+                    </li>
+                    <li>
+                        <a class="main-nav__link" href="#">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Referral URL
+                        </a>
+                    </li>
+                    <li>
+                        <a class="main-nav__link" href="#">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Watch Advertisement
+                        </a>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Profile<span class="badge badge--line badge--blue">2</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Personel Detail</span></a></li>
+                            <li><a href="#"><span>Bank Detail</span></a></li>
+                            </ul>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Security
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Password</span></a></li>
+                            </ul>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Mail<span class="badge badge--line badge--blue">4</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Inbox</span></a></li>
+                            <li><a href="#"><span>Outbox</span></a></li>
+                            <li><a href="#"><span>Write Mail</span></a></li>
+                            <li><a href="#"><span>Send Payment Id</span></a></li>
+                            </ul>
+                    </li>
+                    <li class="main-nav--collapsible">
+                        <a class="main-nav__link" href="#" onclick="return false;">
+                            <span class="main-nav__icon"><i class="pe-7f-graph3"></i></span>
+                            Withdrawel<span class="badge badge--line badge--blue">3</span>
+                        </a>
+                        <ul class="main-nav__submenu">
+                            <li><a href="#"><span>Withdrawel Request</span></a></li>
+                            <li><a href="#"><span>History E-Wallet</span></a></li>
+                            <li><a href="#"><span>History Ad-Wallet</span></a></li>
+                            
+                            </ul>
+                    </li>
+                </ul> <!-- /main-nav -->
+             
+        </aside> <!-- /sidebar -->
+        <div class="col-md-8">
+                        <article class="widget">
+                            <header class="widget__header one-btn">
+                                <div class="widget__title">
+                                    <h3>Media Table</h3>
+                                </div>
+                                <div class="widget__config">
+                                
+                                </div>
+                            </header>
+        <div class="widget__content table-responsive">
+        <table class="table table-bordered  table-condensed table-responsive"  class="dynatable"id="example">
+          <thead>
+            <tr>
+            <th></th>
+            <th scope="row">name</th>
+              <th scope="row">salary</th>
+              <th scope="row">present day</th>
+              <th scope="row">leave days</th>
+              <th scope="row">Total_salary</th>
+              <th colspan="4" scope="row"></th>
+            </tr>
+          </thead>
+
+          <tbody>   
+            <% @admins.each do |admin| %>
+              <tr class="prototype">
+                 <td> <input name="select_all"  type="checkbox" class="test"></td>
+                 <td><%= admin.name %></td>
+                 <td><%= admin.salary %></td>
+                 <td><%= admin.number_of_days %></td>
+                   <td><%= admin.leave %></td> 
+                   <td><%=total_salary(admin) %></td>
+
+                 <td><div class="para1" ><%= link_to 'Show', admin %></div></td>
+                <td><div class="para2" ><%= link_to 'edit', edit_admin_path(admin)%></div></td>
+                <td><div class="para3" ><%= link_to 'Destroy', admin, data: {act_as_disabled: true},remote: true, method: :delete, data: { confirm: 'Are you sure?' } %></div></td>
+                <td><div class="para4" ><%= link_to 'report', report_admin_path(admin) %></div></td>
+                <td><div id="block"><input type="submit" value="block"></div></td>
+                <td><div id="unblock"><input type="submit" value="unblock"></div></td>
+              </tr>
+            <% end %>
+
+          </tbody>
+        </table>
+
+         <%= form_for :admin do |f| %>
+  
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+ 
+
+  <%= f.submit 'filter', class: 'btn btn-primary' %>
+<% end %>
+        </div>
+
+         <div class="btn btn-success">
+        <%= link_to 'New admin', new_admin_path %>
+        </div>
+        <div class="btn btn-success">
+            <%= link_to "Generate File", authenticate_generate_file_path, :target => "_blank" %>
+        </div>
+          <script>
+          $(document).ready(function() {
+        
+      
+        $(".test").click(function() {
+            if ($(this).prop('checked')) {
+                $(".para2").hide();
+                $(".para1").hide();
+                $(".para3").hide();
+                $(".para4").hide();
+                }
+            else{
+
+                $(".para2").show();
+                $(".para1").show();
+                $(".para3").show();
+                $(".para4").show();
+                }
+        });
+    });
+          </script>
+           <script type="text/javascript">
+    $(document).ready(function(e) {
+        $(".checkit").click(function() {
+            if ($(this).prop("checked") == true) {
+                $(this).parent().parent().parent().parent().addClass("selected");
+            } else {
+                $(this).parent().parent().parent().parent().removeClass("selected");
+            }
+        });
+    });
+
+    $(document).ready(function(e) {
+        all_selected_admin = []
+
+        $('[id^="check_"]').click(function() {
+            
+            if ($(this).prop("checked") == true) {
+                admin_id = $(this).attr("id").split("_")[1]
+                all_selected_admin.push(admin_id);
+                console.log("admin ids : " + all_selected_admin);
+            } else {
+                admin_id = $(this).attr("id").split("_")[1]
+                all_selected_admin.splice(all_selected_admin.indexOf(admin_id), 1);
+                console.log("admin ids : " + all_selected_admin);
+            }
+
+        });
+        
+        $('[id^="check_"]').each(function() {
+            
+            if ($(this).prop("checked") == true) {
+                admin_id = $(this).attr("id").split("_")[1]
+                all_selected_admin.push(admin_id);
+                console.log("admin ids : " + all_selected_admin);
+            } else {
+                admin_id = $(this).attr("id").split("_")[1]
+                all_selected_admin.splice(all_selected_admin.indexOf(admin_id), 1);
+                console.log("admin ids : " + all_selected_admin);
+            }
+
+        });
+        console.log("admin ids : " + all_selected_admin);
+
+    });
+
+    $("#block").click(function() {
+        $.ajax({
+            url : "/block/admins",
+            method : "GET",
+            dataType : "script",
+            data : {
+                admin_ids : all_selected_admin
+            }
+        });
+    });
+    $("#unblock").click(function() {
+        
+        $.ajax({
+            url : "/unblock/admins",
+            method : "GET",
+            dataType : "script",
+            data : {
+                admin_ids : all_selected_admin
+            }
+        });
+    }); 
+</script> 
+
+
+
+
+
+    </body>

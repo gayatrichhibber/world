@@ -1,0 +1,55 @@
+
+
+
+<div class="form">
+      
+      
+
+      
+      <div class="tab-content">
+        <div id="signup">
+
+<h1 style="text-align:center" >  Sign up</h1><br><br>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %><br/><br>
+
+  <div class="field">
+    <%= f.label :email %><br /> 
+   <%= f.email_field :email, autofocus: true, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br /><br>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off", required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br /><br>
+    <%= f.password_field :password_confirmation, autocomplete: "off", required: true  %>
+  </div><br>
+    <div class="field">
+  <%= f.label :Sponsar %><br /><br>
+  <select id="user_id" email="user_id">
+  <option value=""></option>
+  <option value="1">abc@gmail.com</option>
+  <option value="2">kiran@gmail.com</option>
+  <option value="3">alia@gmail.com</option>
+</select>
+
+  </div><br>
+
+  <div class="actions" style="text-align:center">
+    <%= f.submit "Sign up" %>
+  </div>
+  </div>
+  <div id="footer">
+  </div>
+  </div>
+  </div>
+<% end %><br>
+
+  <%= render "devise/shared/links" %>

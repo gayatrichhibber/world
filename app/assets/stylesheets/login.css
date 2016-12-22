@@ -1,0 +1,125 @@
+.login-form,
+.login-form h1,
+.login-form span,
+.login-form input,
+.login-form label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body{
+	background-color: #436568;
+}
+
+	
+.login-form {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    padding: 15px 25px 0 25px;
+    margin-top: 155px;
+    background-color: #141517;
+    margin-left: 40%;
+ 
+    
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+ 
+    
+    -moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+    box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+}
+
+.login-form h1 {
+    line-height: 40px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #e4e4e4;
+}
+.login-form input[type=text],
+.login-form input[type=password],
+.login-form input[type=submit] {
+    line-height: 14px;
+    margin: 10px 0;
+    padding: 6px 15px;
+    border: 0;
+    outline: none;
+ 
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+ 
+    
+    -moz-border-radius: 26px;
+    border-radius: 26px;
+ 
+    
+    -moz-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.login-form input[type=text],
+.login-form input[type=password],
+ .login-form span {
+    color: #0B0659 ;
+    width: 170px;
+    margin-left: 10%;
+    
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+ 
+    background: #989898;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #989898 100%);
+    background: linear-gradient(top,  #ffffff 0%,#989898 100%);
+}
+
+
+.login-form input[type=submit] {
+    float: right;
+    cursor: pointer;
+    color: #000;
+    -moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+    box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+.login-form input[type=submit]:hover {
+    
+    -moz-box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+    box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+}
+ 
+
+
+.login-form input[type=checkbox] {
+    position: fixed;
+    left: -9999px;
+   
+
+}
+
+ .login-form span {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-top: 10%;
+
+   -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+    
+    float: left;
+
+}
+
+.login-form label {
+    position: absolute;
+    
+    left: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #e4e4e4;
+    margin-bottom: 100%;
+    
+}

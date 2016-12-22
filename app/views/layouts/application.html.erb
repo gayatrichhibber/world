@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>World</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+ 
+</head>
+<body>
+     <% unless current_model.present? %>
+      <% if params[:controller] == "users" && params[:action] == "index" %>
+        <%= render :partial=> "/devise/shared/header" %>
+      <% end %> 
+    <% else %>
+      <%= render :partial=> "/devise/shared/logged_header" %>
+    <% end %>
+    <p class="notice"><%= notice %></p>
+     
+
+<%= yield %>
+
+
+
+</body>
+</html>

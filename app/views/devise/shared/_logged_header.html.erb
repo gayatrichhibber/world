@@ -1,0 +1,3 @@
+<%= link_to image_tag(current_model.avatar.url(:thumb), :class => 'round-image-50',:target => "_blank") %>
+<%= link_to 'Settings', edit_model_registration_path, :class => 'navbar-link'     %> | 
+<%= link_to "Logout", destroy_model_session_path, method: :delete, :class => 'navbar-link'  %>
